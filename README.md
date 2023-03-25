@@ -14,6 +14,7 @@ pip install -r requirements.txt
 
 ## Rodar backend:  <br>
 ```
+./venv/Scripts/activate
 cd project 
 python manage.py runserver
 ```
@@ -28,7 +29,10 @@ npm install
 ```
 
 ## Rodar frontend:  <br>
-```npm run dev ```
+```
+cd frontend 
+npm run dev 
+```
 
 ***
 
