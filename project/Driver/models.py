@@ -14,3 +14,15 @@ class Veiculo(models.Model):
 
     def __str__(self):
         return self.modelo
+
+
+class Mecanico(models.Model):
+    nome_proprietario = models.CharField(max_length=250)
+    nome_fantasia = models.CharField(max_length=250)
+    email = models.EmailField(max_length=250)
+    password = models.CharField(max_length=50)
+    cnpj = models.CharField(max_length=250)
+    endeco = models.CharField(max_length=250)
+
+    def __str__(self):
+        return self.nome_proprietario
