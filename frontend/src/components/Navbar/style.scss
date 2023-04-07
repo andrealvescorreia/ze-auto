@@ -1,0 +1,44 @@
+@use '../../styles/variables';
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+
+#home-navbar {
+  background-color: variables.$bg-color;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: variables.$text-color;
+
+  height: 4.7rem;
+  display: flex;
+  align-items: center;
+
+  a {
+    cursor: pointer;
+  }
+}
+
+.logo { 
+  margin-right: auto;
+  img{
+    width: 12rem;
+    margin-left: 1.7rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.btn{
+  height: 2.3rem;
+  width: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right:1.2rem;
+}
+
+#login-btn{
+  border: solid 0.1rem;
+  border-color: #0CBBC7;
+  color: #0CBBC7;
+}
+
+#start-now-btn{
+  background-color: #0CBBC7;
+}
