@@ -26,3 +26,22 @@ class Mecanico(models.Model):
 
     def __str__(self):
         return self.nome_proprietario
+
+class Avaliacao(models.Model):
+    note = models.PositiveIntegerField()
+    comentario = models.TextField(blank=True)
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, null=True, blank=True, default=None
+    )
+    mecanico = models.ForeignKey(Mecanico, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.mecanico.nome_proprietario
+
+class Manutencao(models.Model):
+    descricao = models.TextField()
+    veiculo = models.ForeignKey(Veiculo, on_delete=models.DO_NOTHING)
+    mecanico = models.ForeignKey(Mecanico, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.veiculo.modelo
