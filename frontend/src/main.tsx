@@ -4,6 +4,7 @@ import App from './App'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './routes/Home';
 import './styles/main.scss'
+import ChooseProfile from './routes/ChooseProfile';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />
       },
+      {
+        path: '/register-choose-profile',
+        element: <ChooseProfile />
+      }
     ]
   },
 ])

@@ -4,9 +4,11 @@ import SecondaryImg from './img/car-health.png'
 import RepairVector from './img/reapair-car-vector.png'
 import RatingVector from './img/rating-vector.png'
 import {MdOutlineKeyboardArrowRight} from 'react-icons/md'
+import { Link } from "react-router-dom";
 
 const StartNowBtn = () => {
-  return <a className='start-now-btn'>Começe Agora {<MdOutlineKeyboardArrowRight/>}</a>;
+  return <Link to="/register-choose-profile" className='start-now-btn'>Começe Agora {<MdOutlineKeyboardArrowRight/>}</Link>
+  //return <a className='start-now-btn'>Começe Agora {<MdOutlineKeyboardArrowRight/>}</a>;
 }
 
 const Home = () => {

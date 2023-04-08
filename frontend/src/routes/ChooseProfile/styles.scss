@@ -1,0 +1,81 @@
+@use '../../styles/variables';
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+
+#choose-profile {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: variables.$text-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    margin: 2.6rem;
+    font-size: 2.5rem;
+  }
+}
+
+.profiles {
+  display: flex;
+}
+
+#driver-profile {
+  background-image: url('./imgs/driver.png');
+ 
+  .profile-card {
+    margin-left: auto;
+    margin-right: 2rem;
+  }
+}
+
+#mechanic-profile {
+  background-image: url('./imgs/mechanic.png');
+  .profile-card {
+    margin-right: auto;
+    margin-left: 2rem;
+  }
+}
+
+
+
+
+.profile-container {
+  width: 49.4vw;
+  height: 28rem;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.profile-card {
+  width: 24rem;
+  height: 13rem;
+  background-color: variables.$bg-color;
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  svg {
+    margin: 2rem;
+    transform: scale(7);
+  }
+  h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    margin-top: -2rem;
+  }
+  p {
+    color: variables.$text-color-secondary;
+    font-size: 0.9rem;
+  }
+}
+
+.description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
