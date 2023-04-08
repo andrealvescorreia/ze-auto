@@ -31,7 +31,7 @@ const Home = () => {
                 nossos automóveis?”
       </h2>
       <div className={styles.content}>
-        <div className={styles.paragraph}>
+        <div className={styles.description}>
           <p>
             A nossa saúde está intrinsecamente ligada a dos veículos que usamos no dia a dia, 
             visto que  falhas mecânicas podem acarretar em acidentes de trânsito.
@@ -48,7 +48,7 @@ const Home = () => {
 
     <div className={styles.container}>
       <img src={RepairVector}/>
-      <div className={styles.content}>
+      <div>
         <h2>
           Mais facilidade na manutenção.
         </h2>
@@ -63,7 +63,7 @@ const Home = () => {
 
 
     <div className={styles.container}>
-      <div className={styles.content}>
+      <div>
         <h2>
           Encontre as melhores oficinas.
         </h2>

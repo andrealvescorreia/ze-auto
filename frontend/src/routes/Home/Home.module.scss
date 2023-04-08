@@ -1,14 +1,8 @@
 @use '../../styles/variables';
 @use '../../styles/mixins';
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
 
 @mixin container-height {
   height: 44rem;
-}
-
-.home {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  color: variables.$text-color;
 }
 
 #mainContainer {
@@ -45,7 +39,7 @@
     padding-top: 0.1rem;
     transform: scale(1.5);
   }
-  color: white;
+  color: variables.$text-color;
   text-decoration: none;
 }
 #secondaryContainer {
@@ -67,7 +61,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    .paragraph {
+    .description {
       p {
         width: 34rem;
         font-size: 1.7rem;
@@ -108,7 +102,7 @@
   flex-direction: column;
 
   h2 {
-    margin-bottom: 2rem;
     font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
 }
