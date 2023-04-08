@@ -1,0 +1,20 @@
+@use '../../styles/variables';
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+
+
+#home-footer{
+  background-color: variables.$bg-color;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: variables.$text-color;
+  width: 100%;
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+#footer-copyright{
+  color: variables.$text-color-secondary;
+}
