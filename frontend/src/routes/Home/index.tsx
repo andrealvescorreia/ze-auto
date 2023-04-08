@@ -1,4 +1,4 @@
-import './style.scss'
+import styles from './Home.module.scss'
 import MainImg from './img/giving-car-keys.png'
 import SecondaryImg from './img/car-health.png'
 import RepairVector from './img/reapair-car-vector.png'
@@ -7,13 +7,13 @@ import {MdOutlineKeyboardArrowRight} from 'react-icons/md'
 import { Link } from "react-router-dom";
 
 const StartNowBtn = () => {
-  return <Link to="/register-choose-profile" className='start-now-btn'>Começe Agora {<MdOutlineKeyboardArrowRight/>}</Link>
+  return <Link to="/register-choose-profile" className={styles.startNowBtn}>Começe Agora {<MdOutlineKeyboardArrowRight/>}</Link>
 }
 
 const Home = () => {
-  return <div className='home'>
+  return <div className={styles.home}>
 
-    <div id='main-container'>
+    <div id={styles.mainContainer}>
       <h1>Tenha o controle da saúde do seu automóvel de forma simples.</h1>
       <p>
         Com o sistema de histórico de manutenções do Zé Auto, 
@@ -24,14 +24,14 @@ const Home = () => {
     </div>
 
 
-    <div id='secondary-container'>
+    <div id={styles.secondaryContainer}>
       <h2>
         “Se hoje existem sistemas que armazenam o 
          histórico da nossa saúde, por que não de 
                 nossos automóveis?”
       </h2>
-      <div className='content'>
-        <div className='paragraph'>
+      <div className={styles.content}>
+        <div className={styles.paragraph}>
           <p>
             A nossa saúde está intrinsecamente ligada a dos veículos que usamos no dia a dia, 
             visto que  falhas mecânicas podem acarretar em acidentes de trânsito.
@@ -46,9 +46,9 @@ const Home = () => {
     </div>
 
 
-    <div className='container'>
+    <div className={styles.container}>
       <img src={RepairVector}/>
-      <div className='description'>
+      <div className={styles.content}>
         <h2>
           Mais facilidade na manutenção.
         </h2>
@@ -62,8 +62,8 @@ const Home = () => {
     </div>
 
 
-    <div className='container'>
-      <div className='description'>
+    <div className={styles.container}>
+      <div className={styles.content}>
         <h2>
           Encontre as melhores oficinas.
         </h2>
@@ -75,7 +75,7 @@ const Home = () => {
     </div>
 
 
-    <div id='call-to-action-container'>
+    <div id={styles.callToActionContainer}>
       <h2>Começe agora gratuitamente</h2>
       <StartNowBtn/>
     </div>

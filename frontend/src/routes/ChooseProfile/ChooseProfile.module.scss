@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
 
-#choose-profile {
+#choose_profile {
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: variables.$text-color;
   @include mixins.flex-center;
@@ -19,18 +19,18 @@
   display: flex;
 }
 
-#driver-profile {
+#driver_profile {
   background-image: url('./imgs/driver.png');
  
-  .profile-card {
+  .profile_card {
     margin-left: auto;
     margin-right: 2rem;
   }
 }
 
-#mechanic-profile {
+#mechanic_profile {
   background-image: url('./imgs/mechanic.png');
-  .profile-card {
+  .profile_card {
     margin-right: auto;
     margin-left: 2rem;
   }
@@ -39,7 +39,7 @@
 
 
 
-.profile-container {
+.profile_container {
   width: 49.4vw;
   height: 28rem;
   background-size: cover; 
@@ -47,7 +47,7 @@
   @include mixins.flex-center;
 }
 
-.profile-card {
+.profile_card {
   width: 24rem;
   height: 13rem;
   background-color: variables.$bg-color;

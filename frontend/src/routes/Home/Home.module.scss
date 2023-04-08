@@ -11,7 +11,7 @@
   color: variables.$text-color;
 }
 
-#main-container {
+#mainContainer {
   @include mixins.flex-center;
   flex-direction: column;
   @include container-height;
@@ -34,7 +34,7 @@
   }
 }
 
-.start-now-btn {
+.startNowBtn {
   height: 3rem;
   width: 12rem;
   @include mixins.flex-center;
@@ -48,7 +48,7 @@
   color: white;
   text-decoration: none;
 }
-#secondary-container {
+#secondaryContainer {
   @include mixins.flex-center;
   flex-direction: column;
   @include container-height;
@@ -102,7 +102,7 @@
   }
 }
 
-#call-to-action-container {
+#callToActionContainer {
   height: 30rem;
   @include mixins.flex-center;
   flex-direction: column;

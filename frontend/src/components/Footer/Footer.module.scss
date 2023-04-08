@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
 
 
-#home-footer{
+#homeFooter{
   background-color: variables.$bg-color;
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: variables.$text-color;
@@ -15,6 +15,6 @@
   font-size: 0.9rem;
   font-weight: bold;
 }
-#footer-copyright{
+#footerCopyright{
   color: variables.$text-color-secondary;
 }
