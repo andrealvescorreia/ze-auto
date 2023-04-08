@@ -1,6 +1,118 @@
+@use '../../styles/variables';
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
 
+@mixin container-height {
+  height: 44rem;
+}
+
 .home {
-  background-color: gray;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  color: variables.$text-color;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include container-height;
+
+  h1 {
+    font-size: 2.5rem;
+    width: 50rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  p {
+    margin-top: 1rem;
+    color: variables.$text-color-secondary;
+    font-size: 1.1rem;
+    width: 30rem;
+    text-align: center;
+  }
+  img {
+    width: 58rem;
+  }
+}
+
+.start-now-btn {
+  height: 3rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem;
+    background-color: #0CBBC7;
+    font-weight: bold;
+    svg {
+      padding-top: 0.1rem;
+      transform: scale(1.5);
+    }
+}
+#secondary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include container-height;
+
+  h2 {
+    font-size: 2rem;
+    width: 45rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  img {
+    width: 35rem;
+  }
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .paragraph {
+      p {
+        width: 34rem;
+        font-size: 1.7rem;
+        margin: 2rem;
+        line-height: 2.3rem;
+        color: variables.$text-color-secondary;
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  @include container-height;
+  
+  img {
+    width: 38rem;
+  }
+  p {
+    width: 36rem;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    line-height: 2.3rem;
+    color: variables.$text-color-secondary;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+#call-to-action-container {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
 }
