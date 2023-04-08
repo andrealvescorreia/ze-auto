@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 const StartNowBtn = () => {
   return <Link to="/register-choose-profile" className='start-now-btn'>Começe Agora {<MdOutlineKeyboardArrowRight/>}</Link>
-  //return <a className='start-now-btn'>Começe Agora {<MdOutlineKeyboardArrowRight/>}</a>;
 }
 
 const Home = () => {
@@ -16,7 +15,8 @@ const Home = () => {
 
     <div id='main-container'>
       <h1>Tenha o controle da saúde do seu automóvel de forma simples.</h1>
-      <p>Com o sistema de histórico de manutenções do Zé Auto, 
+      <p>
+        Com o sistema de histórico de manutenções do Zé Auto, 
         veja como fica fácil o reparo do seu veículo.
       </p>
       <StartNowBtn/>

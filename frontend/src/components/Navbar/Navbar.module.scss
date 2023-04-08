@@ -1,14 +1,14 @@
 @use '../../styles/variables';
+@use '../../styles/mixins';
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
 
-#home-navbar {
+#home_navbar {
   background-color: variables.$bg-color;
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: variables.$text-color;
   width: 100%;
   height: 4.7rem;
-  display: flex;
-  align-items: center;
+  @include mixins.flex-center;
 }
 
 .logo { 
@@ -23,19 +23,17 @@
 .btn{
   height: 2.3rem;
   width: 9rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include mixins.flex-center;
   margin-right:1.2rem;
 }
 
-#login-btn{
+#login_btn{
   border: solid 0.1rem;
   border-color: #0CBBC7;
   color: #0CBBC7;
 }
 
-#start-now-btn{
+#start_now_btn{
   background-color: #0CBBC7;
   text-decoration: none;
   color: white;

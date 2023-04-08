@@ -1,13 +1,14 @@
 @use '../../styles/variables';
+@use '../../styles/mixins';
+
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
 
 #choose-profile {
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: variables.$text-color;
-  display: flex;
+  @include mixins.flex-center;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
   h1 {
     margin: 2.6rem;
     font-size: 2.5rem;
@@ -43,8 +44,7 @@
   height: 28rem;
   background-size: cover; 
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
+  @include mixins.flex-center;
 }
 
 .profile-card {
