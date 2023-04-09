@@ -22,6 +22,7 @@
   width: 9rem;
   @include mixins.flex-center;
   margin-right:1.2rem;
+  transition: .2s;
 }
 
 #login_btn{
@@ -29,6 +30,16 @@
   color: #0CBBC7;
 }
 
+#login_btn:hover{
+  border-color: #11efff;;
+  color: #11efff;;
+}
+
+
 #start_now_btn{
   background-color: #0CBBC7;
+}
+
+#start_now_btn:hover {
+  background-color: #0acfdd;
 }

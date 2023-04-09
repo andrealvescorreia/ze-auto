@@ -3,12 +3,15 @@ import {HiWrenchScrewdriver} from 'react-icons/hi2'
 import styles from './ChooseProfile.module.scss'
 import { Link } from 'react-router-dom';
 
+import Driver from './imgs/driver.png'
+import Mechanic from './imgs/mechanic.png'
+
 const ChooseProfile = () => {
   return <div id={styles.choose_profile}>
     <h1>Qual o seu perfil?</h1>
+    
     <div className={styles.profiles}>
       <div className={styles.profile_container}  id={styles.driver_profile} >
-        
         <Link to='/register/driver' className={styles.profile_card} >
           <div className={styles.description} >
             <h2>Motorista</h2>
@@ -16,6 +19,7 @@ const ChooseProfile = () => {
           </div>
           <FaIdCard />
         </Link>
+        <img className={styles.bgImage} src={Driver}/>
       </div>
 
       <div className={styles.profile_container}  id={styles.mechanic_profile} >
@@ -26,6 +30,7 @@ const ChooseProfile = () => {
             <p>Quero usar o Zé Auto para auxiliar meu trabalho de manutenção de veículos dos meus clientes, e expandir o meu negócio.</p>
           </div>
         </Link>
+        <img className={styles.bgImage} src={Mechanic}/>
       </div>
     </div>
 
