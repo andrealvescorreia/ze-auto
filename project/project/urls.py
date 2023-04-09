@@ -20,6 +20,8 @@ from rest_framework import routers
 
 from Driver.api import viewsets as driverviewsets
 
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+
 route = routers.DefaultRouter()
 
 route.register(r'Usuario', driverviewsets.UserViewSet, basename='Usuario')
@@ -30,5 +32,7 @@ route.register(r'Manutenção', driverviewsets.ManutencaoViewSet, basename='Manu
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('token/', TokenObtainPairView.as_view()),
+    path('token/refresh/', TokenRefreshView.as_view()),
     path('', include(route.urls))
 ]
