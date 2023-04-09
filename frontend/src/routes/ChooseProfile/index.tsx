@@ -9,7 +9,7 @@ const ChooseProfile = () => {
     <div className={styles.profiles}>
       <div className={styles.profile_container}  id={styles.driver_profile} >
         
-        <Link to='/register/driver' className={styles.profile_card} >
+        <Link to='/register-driver' className={styles.profile_card} >
           <div className={styles.description} >
             <h2>Motorista</h2>
             <p>Quero usar o Zé Auto para me auxiliar no controle das próximas manutenções de meu veículo.</p>

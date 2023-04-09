@@ -1,0 +1,41 @@
+@use '../../styles/variables';
+@use '../../styles/mixins';
+
+.register_container{
+    @include mixins.flex-center;
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 25%;
+        margin-bottom: 1rem;
+    }
+}
+
+#form_register_driver{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 40%;
+    border-radius: 8px;
+    padding: 1rem;
+    
+}
+
+#passwords{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px; 
+    #input_box{
+        background-color: white;
+        display: block;
+        input{
+            width: 90%;
+        }
+        #eye{
+            background-color: black;
+            color: black;
+        }
+    }
+}
+
