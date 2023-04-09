@@ -1,10 +1,30 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import './index.css'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './routes/Home';
+import './styles/main.scss'
+import ChooseProfile from './routes/ChooseProfile';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: '/register-choose-profile',
+        element: <ChooseProfile />
+      }
+    ]
+  },
+])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

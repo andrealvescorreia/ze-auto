@@ -1,0 +1,45 @@
+@use '../../styles/variables';
+@use '../../styles/mixins';
+
+#navbar {
+  background-color: variables.$bg-color;
+  width: 100%;
+  height: 4.7rem;
+  @include mixins.flex-center;
+}
+
+.logo { 
+  margin-right: auto;
+  img{
+    width: 12rem;
+    margin-left: 1.7rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.btn{
+  height: 2.3rem;
+  width: 9rem;
+  @include mixins.flex-center;
+  margin-right:1.2rem;
+  transition: .2s;
+}
+
+#login_btn{
+  border: solid 0.1rem #0CBBC7;
+  color: #0CBBC7;
+}
+
+#login_btn:hover{
+  border-color: #11efff;;
+  color: #11efff;;
+}
+
+
+#start_now_btn{
+  background-color: #0CBBC7;
+}
+
+#start_now_btn:hover {
+  background-color: #0acfdd;
+}
