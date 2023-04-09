@@ -40,7 +40,7 @@ class Avaliacao(models.Model):
 
 class Manutencao(models.Model):
     descricao = models.TextField()
-    veiculo = models.ForeignKey(Veiculo, on_delete=models.DO_NOTHING)
+    veiculo = models.ForeignKey(Veiculo, on_delete=models.CASCADE)
     mecanico = models.ForeignKey(Mecanico, on_delete=models.CASCADE)
 
     def __str__(self):
