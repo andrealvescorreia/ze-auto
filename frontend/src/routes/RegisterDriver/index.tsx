@@ -13,13 +13,17 @@ const RegisterDriver = () => {
 
                     <span>Informações Pessoais</span>
 
-                    <label htmlFor="name">Nome</label>
-                    <input type="text" name='name' id='name' />
+                    <label htmlFor="name">
+                        Nome
+                        <input type="text" name='name' id='name' />
+                    </label>
 
                     <span>Informações de Login</span>
 
-                    <label htmlFor="e-mail">E-mail</label>
-                    <input type="text" name='e-mail' id='e-mail' />
+                    <label htmlFor="e-mail">
+                        E-mail
+                        <input type="text" name='e-mail' id='e-mail' />
+                    </label>
                 <div id={styles.passwords}>
 
                     <label htmlFor="password">Senha
@@ -37,6 +41,7 @@ const RegisterDriver = () => {
                     </label>
                     
                 </div>
+                <button id={styles.create_button} >Criar conta</button>
                     
 
             </form>

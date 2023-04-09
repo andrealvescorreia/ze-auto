@@ -14,27 +14,51 @@
 #form_register_driver{
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: #202A31;
     width: 40%;
     border-radius: 8px;
     padding: 1rem;
+    input{
+        background-color: #B0CADC;
+        border-radius: 5px;
+        height: 2rem;
+        width: 100%;
+    }
+    label{
+        margin-top: 1rem;
+    }
+    span{
+        color: #fcfcfc64;
+        margin-top: 1rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 0.7px solid #fcfcfc64;
+    }
+    #create_button{
+        margin-top: 10px;
+        background-color: #FC6868;
+        width: 25%;
+        height: 2.3rem;
+        border-radius: 10px;
+        align-self: center;
+    }
+
     
 }
 
 #passwords{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     column-gap: 10px; 
+
     #input_box{
-        background-color: white;
-        display: block;
+        display: flex;  
+        align-items: center;
+        background-color: #B0CADC;
+        border-radius: 5px;
         input{
             width: 90%;
-        }
-        #eye{
-            background-color: black;
-            color: black;
+            border: none;
         }
     }
 }
