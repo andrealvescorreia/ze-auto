@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './routes/Home';
+import SignIn from './routes/SignIn';
 import './styles/main.scss'
 import ChooseProfile from './routes/ChooseProfile';
 
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: '/register-choose-profile',
         element: <ChooseProfile />
+      },
+      {
+        path: '/login',
+        element: <SignIn/>
       }
     ]
   },
