@@ -1,0 +1,70 @@
+@use '../../styles/variables';
+@use '../../styles/mixins';
+
+.register_container{
+    @include mixins.flex-center;
+    display: flex;
+    flex-direction: column;
+    img{
+        margin-top: 1rem;
+        width: 25%;
+        margin-bottom: 1rem;
+    }
+}
+
+#form_register_driver{
+    display: flex;
+    flex-direction: column;
+
+    background-color: #202A31;
+    width: 40%;
+
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    input{
+        background-color: #B0CADC;
+        border-radius: 5px;
+        padding: 5px;
+        width: 100%;
+        outline: 0;
+        color: black;
+    }
+    label{
+        margin-top: 1rem;
+    }
+    span{
+        color: #fcfcfc64;
+        margin-top: 1rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 0.7px solid #fcfcfc64;
+    }
+    #create_button{
+        margin-top: 10px;
+        background-color: #FC6868;
+        width: 25%;
+        height: 2.3rem;
+        border-radius: 10px;
+        align-self: center;
+    }   
+}
+
+#passwords{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 10px; 
+
+    #input_box{
+        display: flex;  
+        align-items: center;
+        background-color: #B0CADC;
+        border-radius: 5px;
+        input{
+            width: 90%;
+            border: none;
+        }
+    }
+}
+
